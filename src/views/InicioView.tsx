@@ -18,19 +18,19 @@ export default function InicioView() {
   const faqs = [
     {
       pregunta: "¿Cuál es el impermeabilizante más recomendado para techos en temporada de calor?",
-      respuesta: "Para techos expuestos a altas temperaturas, lo ideal es elegir un impermeabilizante reflectivo que disminuya la absorción de calor. FESTER ACRITON GREEN SHIELD, con tecnología Cool Roof, es una opción recomendada para climas cálidos por su capacidad de reflejar la radiación solar, reducir la temperatura interior y prolongar la vida útil del techo."
+      respuesta: "Para techos expuestos a altas temperaturas, lo ideal es un sistema acrílico reflectivo de alta densidad. El sistema PROTEXA ALUMACRIL o sus soluciones con alta reflectividad solar actúan como barrera térmica, disminuyendo drásticamente la absorción de calor, reduciendo la temperatura al interior del inmueble y resistiendo la degradación por rayos UV en zonas costeras."
     },
     {
-      pregunta: "¿Puedo aplicar productos Fester en superficies húmedas o con salitre?",
-      respuesta: "Existen sistemas específicos diseñados para contrarrestar la humedad ascendente y el salitre. Es indispensable realizar una preparación previa de la superficie, retirando partes flojas o contaminadas, para posteriormente aplicar barreras de vapor o morteros cementosos impermeables especiales."
+      pregunta: "¿Puedo aplicar productos Protexa en superficies húmedas o con salitre?",
+      respuesta: "Sí, contamos con sistemas específicos para controlar la humedad y el salitre. Es indispensable realizar un saneamiento profundo de la superficie, eliminando los desprendimientos contaminados, para luego aplicar un primario hidrofugante cementoso o barreras asfálticas base agua de la línea PROTEXA que sellan la porosidad y detienen la humedad ascendente."
     },
     {
       pregunta: "¿Cómo elijo entre mortero autonivelante o de fraguado rápido?",
-      respuesta: "Depende del tiempo de entrega y del espesor requerido. Los morteros de fraguado rápido son ideales para reparaciones urgentes que necesitan tráfico peatonal en pocas horas, mientras que los autonivelantes garantizan superficies perfectamente planas para recibir acabados finos."
+      respuesta: "La elección se basa en el programa de obra y la nivelación requerida. Los morteros de fraguado rápido Protexa están diseñados para reparaciones estructurales urgentes que requieren tráfico en pocas horas, mientras que nuestros aditivos y cementos técnicos autonivelantes se usan para lograr superficies perfectamente planas y uniformes antes de colocar acabados finales."
     },
     {
-      pregunta: "¿Fester ofrece garantía en sus impermeabilizantes?",
-      respuesta: "Sí, dependiendo del producto seleccionado (asfálticos, acrílicos, mantos prefabricados o sistemas poliuretanos), las garantías comerciales van desde los 3, 5, 7 hasta los 10 o más años, siempre que se sigan los manuales técnicos de aplicación."
+      pregunta: "¿Protexa ofrece garantía en sus impermeabilizantes?",
+      respuesta: "Sí, Protexa respalda oficialmente sus materiales. Dependiendo de la tecnología del sistema seleccionado (como los mantos prefabricados PLASTIMAX, soluciones asfálticas o elastoméricas acrílicas), las garantías por escrito van desde los 3, 5, 6, 8 hasta los 10 años, sujetas al cumplimiento de las fichas técnicas de aplicación."
     }
   ];
 
@@ -113,7 +113,7 @@ export default function InicioView() {
 
       <section className="py-16 max-w-4xl mx-auto px-4">
         <h2 className="text-2xl font-black text-[#154A94] uppercase tracking-wide mb-2 text-center md:text-left">
-          Preguntas Frecuentes sobre Productos Fester
+          Preguntas Frecuentes sobre Productos Protexa
         </h2>
         <div className="w-20 h-1 bg-[#E05600] mb-8 mx-auto md:mx-0"></div>
 
