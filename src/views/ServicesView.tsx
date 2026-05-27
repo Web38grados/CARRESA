@@ -20,9 +20,9 @@ export default function ServicesView() {
       desc: "Aplicación experta contra filtraciones y humedades en losas, techos, azoteas y cisternas utilizando sistemas acrílicos, prefabricados y mantos asfálticos de alta gama.", 
       icono: "construction",
       imagen: "/images/imagen16.jpeg",
-      tiempo: "2 a 5 días hábiles (Dependiendo de la extensión en m² y condiciones climáticas).",
-      materiales: "Fester Acriton, Mantos Prefabricados Fester, Imprimantes Asfálticos e Hidrofugantes cementosos.",
-      garantia: "Garantía por escrito de 3, 5, 7 o hasta 10 años según el sistema seleccionado.",
+      tiempo: "Dependiendo de la extensión en m² y las condiciones climáticas del sitio.",
+      materiales: "Impermeabilizantes acrílicos Protexa, Mantos Prefabricados Asfálticos Protexa, Imprimantes Asfálticos e Hidrofugantes cementosos.",
+      garantia: "Garantía por escrito de 3, 5, 6, 8 o 10 años según el sistema seleccionado.",
       detalles: "El proceso incluye lavado por hidrolavadora a presión, calafateo técnico de grietas críticas, aplicación de pasadas cruzadas de impermeabilizante y refuerzo estructural con malla de poliéster multidireccional."
     },
     { 
@@ -30,8 +30,8 @@ export default function ServicesView() {
       desc: "Especialistas en acabados de exteriores, igualación de tonos corporativos y aplicación de pintura vertical en altura garantizando máxima durabilidad contra el clima costero.", 
       icono: "palette",
       imagen: "/images/imagen6.jpeg",
-      tiempo: "3 a 7 días dependiendo de la altura, niveles del edificio y preparación previa requerida.",
-      materiales: "Pinturas e imper-pinturas acrílicas de alta densidad con resiliencia UV y selladores antihumedad.",
+      tiempo: "Dependiendo de la altura del inmueble y niveles del edificio.",
+      materiales: "Pinturas vinílicas y esmaltes Contimex, pinturas acrílicas de alta calidad y densidad con resiliencia UV, y sellador multiusos antihumedad.",
       garantia: "Hasta 5 años contra desprendimiento y decoloración prematura provocada por salitre.",
       detalles: "Especializados en trabajos verticales con andamiaje seguro y equipo de pintura Airless para acabados uniformes. Incluye el sellado completo de porosidades microscópicas y resane de descarapelamientos."
     },
@@ -40,8 +40,8 @@ export default function ServicesView() {
       desc: "Comercializamos materiales y sistemas de impermeabilización directo a tu obra con el respaldo oficial de las mejores marcas y asesoramiento técnico en sitio.", 
       icono: "local_shipping",
       imagen: "/images/imagen7.jpeg",
-      tiempo: "Entrega inmediata en Acapulco (Mismo día o máximo 24 horas para stock de catálogo).",
-      materiales: "Gama completa de soluciones Fester, aditivos para concreto, selladores elásticos y herramientas.",
+      tiempo: "Máximo 48 horas para productos en stock; se prioriza entrega el mismo día cuando sea posible.",
+      materiales: "Gama completa de soluciones Protexa, aditivos para concreto, selladores elásticos y herramientas.",
       garantia: "Garantía de fábrica directa sobre lotes y sellos de seguridad originales vigentes.",
       detalles: "Contamos con logística optimizada para trasladar volúmenes industriales o residenciales directo a pie de obra. Ofrecemos cuantificación de materiales sin costo mediante planos o levantamiento técnico."
     },
@@ -52,7 +52,7 @@ export default function ServicesView() {
       imagen: "/images/imagen14.jpeg",
       tiempo: "Variable (Sujeto al cronograma de obra y alcances del proyecto arquitectónico).",
       materiales: "Tablaroca RH (Resistente a Humedad), estructuras galvanizadas, recubrimientos finos y porcelanatos.",
-      garantia: "1 año en vicios ocultos y mano de obra civil aplicable tras la entrega final.",
+      garantia: "1 año en vicios ocultos.",
       detalles: "Desarrollamos proyectos llave en mano cubriendo demoliciones controladas, levantamiento de muros falsos, diseño de plafones, instalaciones eléctricas estéticas y acabados de pintura fina texturizada."
     }
   ];
