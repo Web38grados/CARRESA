@@ -31,7 +31,7 @@ export default function NovedadesView() {
       bgIcono: "bg-purple-50"
     },
     {
-      categoria: "Aviso Operativo",
+      categoria: "Tip",
       titulo: "Evaluaciones Técnicas y Presupuestos sin Costo a pie de obra",
       desc: "Si notas manchas de humedad, desprendimiento de pintura o salitre en tus muros, nuestro equipo técnico especializado está disponible para realizar visitas de diagnóstico directamente en tu inmueble dentro de la región. Evaluamos las condiciones de la superficie para entregarte una propuesta exacta sin compromisos.",
       icono: "assignment_turned_in",
