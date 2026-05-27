@@ -86,7 +86,7 @@ export default function ContactoView() {
           Contacto por Correo Rápido
         </h3>
         <p className="text-slate-500 text-xs text-center mb-8 max-w-sm mx-auto leading-relaxed">
-          Escríbenos directamente desde aquí para cotizaciones, dudas técnicas o presupuestos de material Fester.
+          Escríbenos directamente desde aquí para cotizaciones, dudas técnicas o presupuestos de material Protexa y Contimex.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-5">
