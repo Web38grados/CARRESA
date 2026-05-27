@@ -7,6 +7,8 @@ export default function Header() {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   useEffect(() => {
     const controlHeader = () => {
       if (window.scrollY > lastScrollY && window.scrollY > 100) {
@@ -21,11 +23,22 @@ export default function Header() {
     return () => window.removeEventListener('scroll', controlHeader);
   }, [lastScrollY]);
 
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [location]);
+
   const linkStyle = (path: string) => {
     const base = "px-3 py-2 font-semibold text-sm transition-all duration-300 transform hover:scale-105 inline-block ";
     return location.pathname === path 
       ? base + "text-[#E05600] font-bold border-b-4 border-[#E05600]" 
       : base + "text-slate-700 hover:text-[#154A94]";
+  };
+
+  const mobileLinkStyle = (path: string) => {
+    const base = "w-full text-center py-3 font-semibold text-base border-b border-slate-100 ";
+    return location.pathname === path
+      ? base + "text-[#E05600] font-bold bg-slate-50"
+      : base + "text-slate-700";
   };
 
   return (
@@ -63,7 +76,7 @@ export default function Header() {
             <Link to="/servicios" className={linkStyle('/servicios')}>Servicios</Link>
             <Link to="/productos" className={linkStyle('/productos')}>Productos</Link>
             <Link to="/galeria" className={linkStyle('/galeria')}>Galería</Link>
-            <Link to="/novedades" className={linkStyle('/novedades')}>Tips & Novedades</Link>
+            <Link to="/novedades" className={linkStyle('/novedades')}>Novedades & Tips</Link>
             
             <Link 
               to="/contacto" 
@@ -72,8 +85,35 @@ export default function Header() {
             </Link>
           </nav>
 
+          <button 
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden p-2 text-[#154A94] focus:outline-none"
+          >
+            <span className="material-icons text-3xl">
+              {isMobileMenuOpen ? 'close' : 'menu'}
+            </span>
+          </button>
+
         </div>
       </div>
+
+      {isMobileMenuOpen && (
+        <div className="md:hidden bg-white w-full border-b border-slate-200 shadow-xl flex flex-col items-center animate-fadeIn">
+          <Link to="/" className={mobileLinkStyle('/')}>Inicio</Link>
+          <Link to="/servicios" className={mobileLinkStyle('/servicios')}>Servicios</Link>
+          <Link to="/productos" className={mobileLinkStyle('/productos')}>Productos</Link>
+          <Link to="/galeria" className={mobileLinkStyle('/galeria')}>Galería</Link>
+          <Link to="/novedades" className={mobileLinkStyle('/novedades')}>Avisos operativos</Link>
+          <div className="py-4 w-full text-center">
+            <Link 
+              to="/contacto" 
+              className="bg-[#E05600] text-white px-8 py-2.5 rounded-lg text-sm font-bold shadow-md inline-block"
+            >
+              Contactar
+            </Link>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
