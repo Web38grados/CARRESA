@@ -1,11 +1,29 @@
-import { Link } from 'react-router-dom';
-
 export default function ProductsView() {
   const listaProductos = [
-    { nombre: "Impermeabilizantes Profesionales", cat: "Impermeabilizantes", img: "/images/imagen4.jpeg", desc: "Sistemas acrílicos y mantos asfálticos de alta resistencia listos para contrarrestar el intemperismo severo." },
-    { nombre: "Pinturas de Alta Durabilidad", cat: "Pinturas", img: "/images/imagen8.jpeg", desc: "Recubrimientos arquitectónicos premium con máxima protección UV, ideales para interiores y fachadas." },
-    { nombre: "Panel Covintec", cat: "Estructural", img: "/images/imagen1.jpeg", desc: "Paneles termoacústicos estructurales de última generación para construcciones y ampliaciones rápidas." }
+    { 
+      nombre: "Impermeabilizantes Protexa", 
+      cat: "Impermeabilizantes", 
+      img: "/images/imagen4.jpeg", 
+      desc: "Sistemas acrílicos y mantos prefabricados asfálticos Protexa de alta resistencia para contrarrestar el intemperismo severo en losas, techos y azoteas.",
+      pdf: "/fichas/ficha-protexa-impermeabilizantes.pdf"
+    },
+    { 
+      nombre: "Pinturas Contimex", 
+      cat: "Pinturas", 
+      img: "/images/imagen8.jpeg", 
+      desc: "Línea de pinturas vinílicas y esmaltes Contimex con máxima protección UV, ideales para fachadas e interiores de alta durabilidad.",
+      pdf: "/fichas/ficha-contimex-pinturas.pdf"
+    },
+    { 
+      nombre: "Panel Covintech", 
+      cat: "Estructural", 
+      img: "/images/imagen1.jpeg", 
+      desc: "Paneles Covintech para losa y muro: solución termoacústica estructural para construcciones y ampliaciones rápidas en proyectos residenciales y comerciales.",
+      pdf: "/fichas/ficha-covintech-panel.pdf"
+    }
   ];
+
+  const whatsappNumber = "527444003040";
 
   return (
     <div className="pt-20 pb-20 max-w-7xl mx-auto px-4 bg-slate-50/50">
@@ -14,6 +32,9 @@ export default function ProductsView() {
         <h2 className="text-3xl font-black text-[#154A94] uppercase tracking-wide">
           Línea de Suministros Oficiales
         </h2>
+        <p className="text-xs md:text-sm text-slate-500 mt-2 font-medium max-w-xl mx-auto leading-relaxed">
+          Descarga la ficha técnica de cada producto o contáctanos para cotización directa.
+        </p>
         <div className="w-24 h-1 bg-[#E05600] mx-auto mt-3 rounded-full"></div>
       </div>
 
@@ -34,7 +55,7 @@ export default function ProductsView() {
               </span>
             </div>
 
-            <div className="p-6 flex flex-col justify-between">
+            <div className="p-6 flex flex-col justify-between flex-1">
               <div className="mb-6">
                 <h3 className="text-lg font-extrabold text-[#154A94] mt-1 mb-2 tracking-tight group-hover:text-[#E05600] transition-colors duration-300">
                   {prod.nombre}
@@ -44,11 +65,26 @@ export default function ProductsView() {
                 </p>
               </div>
 
-              <Link 
-                to="/contacto" 
-                className="block text-center bg-[#154A94] text-white font-bold py-3 rounded-xl text-xs uppercase tracking-wider shadow-sm transition-all duration-300 transform hover:bg-[#E05600] hover:shadow-md hover:scale-[1.02] active:scale-[0.98]">
-                Cotizar Material
-              </Link>
+              <div className="flex flex-col gap-2">
+                <a
+                  href={prod.pdf}
+                  download
+                  className="flex items-center justify-center gap-1.5 border border-[#154A94] text-[#154A94] font-bold py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all duration-300 hover:bg-[#154A94] hover:text-white hover:shadow-sm"
+                >
+                  <span className="material-icons text-sm select-none">download</span>
+                  Ficha Técnica PDF
+                </a>
+
+                <a
+                  href={`https://wa.me/${whatsappNumber}?text=Hola,%20me%20interesa%20cotizar:%20${encodeURIComponent(prod.nombre)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-1.5 bg-[#25D366] text-white font-bold py-2.5 rounded-xl text-xs uppercase tracking-wider shadow-sm transition-all duration-300 hover:bg-emerald-600 hover:shadow-md"
+                >
+                  <span className="material-icons text-sm select-none">chat</span>
+                  Cotizar por WhatsApp
+                </a>
+              </div>
             </div>
           </div>
         ))}
