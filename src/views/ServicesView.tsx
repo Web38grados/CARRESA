@@ -6,13 +6,15 @@ interface Servicio {
   icono: string;
   imagen: string;
   tiempo: string;
-  materiales: string;
+  materiales: string; 
   garantia: string;
   detalles: string;
 }
 
 export default function ServicesView() {
   const [servicioSeleccionado, setServicioSeleccionado] = useState<Servicio | null>(null);
+
+  const whatsappNumber = "527444003040";
 
   const listaServicios: Servicio[] = [
     { 
@@ -177,7 +179,7 @@ export default function ServicesView() {
 
             <div className="bg-slate-50 px-6 py-4 border-t border-slate-100 flex justify-end shrink-0">
               <a 
-                href="https://wa.me/527444003040"
+                href={`https://wa.me/${whatsappNumber}?text=Hola,%20me%20interesa%20cotizar%20el%20servicio%20de:%20${encodeURIComponent(servicioSeleccionado.titulo)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto bg-[#25D366] text-white font-bold text-xs uppercase px-6 py-3 rounded-xl shadow-sm hover:bg-emerald-600 transition-all flex items-center justify-center gap-1.5 tracking-wide">
