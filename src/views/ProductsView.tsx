@@ -5,21 +5,21 @@ export default function ProductsView() {
       cat: "Impermeabilizantes", 
       img: "/images/imagen4.jpeg", 
       desc: "Sistemas acrílicos y mantos prefabricados asfálticos Protexa de alta resistencia para contrarrestar el intemperismo severo en losas, techos y azoteas.",
-      pdf: "/fichas/ficha-protexa-impermeabilizantes.pdf"
+      pdf: "/fichas/ficha-protexa.pdf" 
     },
     { 
       nombre: "Pinturas Contimex", 
       cat: "Pinturas", 
       img: "/images/imagen8.jpeg", 
       desc: "Línea de pinturas vinílicas y esmaltes Contimex con máxima protección UV, ideales para fachadas e interiores de alta durabilidad.",
-      pdf: "/fichas/ficha-contimex-pinturas.pdf"
+      pdf: "/fichas/ficha-contimex.pdf" 
     },
     { 
       nombre: "Panel Covintech", 
       cat: "Estructural", 
       img: "/images/imagen1.jpeg", 
       desc: "Paneles Covintech para losa y muro: solución termoacústica estructural para construcciones y ampliaciones rápidas en proyectos residenciales y comerciales.",
-      pdf: "/fichas/ficha-covintech-panel.pdf"
+      pdf: "/fichas/ficha-covintech.pdf" 
     }
   ];
 
@@ -43,6 +43,7 @@ export default function ProductsView() {
           <div 
             key={idx} 
             className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col justify-between transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl border-b-4 hover:border-b-[#E05600]">
+            
             <div className="h-56 bg-slate-100 relative overflow-hidden">
               <img 
                 src={prod.img} 
@@ -72,7 +73,7 @@ export default function ProductsView() {
                   className="flex items-center justify-center gap-1.5 border border-[#154A94] text-[#154A94] font-bold py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all duration-300 hover:bg-[#154A94] hover:text-white hover:shadow-sm"
                 >
                   <span className="material-icons text-sm select-none">download</span>
-                  Ficha Técnica PDF
+                  Descargar Ficha PDF
                 </a>
 
                 <a
@@ -86,6 +87,7 @@ export default function ProductsView() {
                 </a>
               </div>
             </div>
+
           </div>
         ))}
       </div>
